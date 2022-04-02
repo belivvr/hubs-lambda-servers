@@ -8,6 +8,7 @@
     "eslint-plugin-import": "^2.25.4"
   },
   "dependencies": {
+    "aws-sdk": "^2.1106.0",
     "request": "^2.88.2",
     "sharp": "^0.30.3"
   }
