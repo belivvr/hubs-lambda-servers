@@ -34,6 +34,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["aws-sdk", "npm:2.1106.0"],\
+            ["chrome-aws-lambda", "virtual:c27311c20523c58c8fae3292c35ea3a5abf147a2620c79044bfb1f381caacd710694b89a4f63de2cf3c92aefac98a8a4a22e96563412b50efdf27e192e1aa693#npm:10.1.0"],\
+            ["chrome-remote-interface", "npm:0.31.2"],\
             ["eslint", "npm:8.12.0"],\
             ["eslint-config-airbnb-base", "virtual:c27311c20523c58c8fae3292c35ea3a5abf147a2620c79044bfb1f381caacd710694b89a4f63de2cf3c92aefac98a8a4a22e96563412b50efdf27e192e1aa693#npm:15.0.0"],\
             ["eslint-plugin-import", "virtual:c27311c20523c58c8fae3292c35ea3a5abf147a2620c79044bfb1f381caacd710694b89a4f63de2cf3c92aefac98a8a4a22e96563412b50efdf27e192e1aa693#npm:2.25.4"],\
@@ -533,6 +535,40 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["chrome-aws-lambda", [\
+        ["npm:10.1.0", {\
+          "packageLocation": "./.yarn/cache/chrome-aws-lambda-npm-10.1.0-859b927d1e-e5ad2dc68c.zip/node_modules/chrome-aws-lambda/",\
+          "packageDependencies": [\
+            ["chrome-aws-lambda", "npm:10.1.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:c27311c20523c58c8fae3292c35ea3a5abf147a2620c79044bfb1f381caacd710694b89a4f63de2cf3c92aefac98a8a4a22e96563412b50efdf27e192e1aa693#npm:10.1.0", {\
+          "packageLocation": "./.yarn/__virtual__/chrome-aws-lambda-virtual-9efc0de552/0/cache/chrome-aws-lambda-npm-10.1.0-859b927d1e-e5ad2dc68c.zip/node_modules/chrome-aws-lambda/",\
+          "packageDependencies": [\
+            ["chrome-aws-lambda", "virtual:c27311c20523c58c8fae3292c35ea3a5abf147a2620c79044bfb1f381caacd710694b89a4f63de2cf3c92aefac98a8a4a22e96563412b50efdf27e192e1aa693#npm:10.1.0"],\
+            ["@types/puppeteer-core", null],\
+            ["lambdafs", "npm:2.1.1"],\
+            ["puppeteer-core", null]\
+          ],\
+          "packagePeers": [\
+            "@types/puppeteer-core",\
+            "puppeteer-core"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["chrome-remote-interface", [\
+        ["npm:0.31.2", {\
+          "packageLocation": "./.yarn/cache/chrome-remote-interface-npm-0.31.2-334e7bf99f-279723781c.zip/node_modules/chrome-remote-interface/",\
+          "packageDependencies": [\
+            ["chrome-remote-interface", "npm:0.31.2"],\
+            ["commander", "npm:2.11.0"],\
+            ["ws", "virtual:334e7bf99fb2a779de992a0fe8ef6091b9931b2915564f1043ba7ad65c6992cab0d4709c831042df87e21d1d5578aec92ab34fce4d7ccecadea3149593a89ee5#npm:7.5.7"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["clean-stack", [\
         ["npm:2.2.0", {\
           "packageLocation": "./.yarn/cache/clean-stack-npm-2.2.0-a8ce435a5c-2ac8cd2b2f.zip/node_modules/clean-stack/",\
@@ -607,6 +643,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["combined-stream", "npm:1.0.8"],\
             ["delayed-stream", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["commander", [\
+        ["npm:2.11.0", {\
+          "packageLocation": "./.yarn/cache/commander-npm-2.11.0-c1edb3e469-0d0c622d12.zip/node_modules/commander/",\
+          "packageDependencies": [\
+            ["commander", "npm:2.11.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1622,6 +1667,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["hubs-lambda-servers", "workspace:."],\
             ["aws-sdk", "npm:2.1106.0"],\
+            ["chrome-aws-lambda", "virtual:c27311c20523c58c8fae3292c35ea3a5abf147a2620c79044bfb1f381caacd710694b89a4f63de2cf3c92aefac98a8a4a22e96563412b50efdf27e192e1aa693#npm:10.1.0"],\
+            ["chrome-remote-interface", "npm:0.31.2"],\
             ["eslint", "npm:8.12.0"],\
             ["eslint-config-airbnb-base", "virtual:c27311c20523c58c8fae3292c35ea3a5abf147a2620c79044bfb1f381caacd710694b89a4f63de2cf3c92aefac98a8a4a22e96563412b50efdf27e192e1aa693#npm:15.0.0"],\
             ["eslint-plugin-import", "virtual:c27311c20523c58c8fae3292c35ea3a5abf147a2620c79044bfb1f381caacd710694b89a4f63de2cf3c92aefac98a8a4a22e96563412b50efdf27e192e1aa693#npm:2.25.4"],\
@@ -2057,6 +2104,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["extsprintf", "npm:1.3.0"],\
             ["json-schema", "npm:0.4.0"],\
             ["verror", "npm:1.10.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["lambdafs", [\
+        ["npm:2.1.1", {\
+          "packageLocation": "./.yarn/cache/lambdafs-npm-2.1.1-03672a634a-e277462851.zip/node_modules/lambdafs/",\
+          "packageDependencies": [\
+            ["lambdafs", "npm:2.1.1"],\
+            ["tar-fs", "npm:2.1.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3442,6 +3499,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/wrappy-npm-1.0.2-916de4d4b3-159da4805f.zip/node_modules/wrappy/",\
           "packageDependencies": [\
             ["wrappy", "npm:1.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["ws", [\
+        ["npm:7.5.7", {\
+          "packageLocation": "./.yarn/cache/ws-npm-7.5.7-6cc440864a-5c1f669a16.zip/node_modules/ws/",\
+          "packageDependencies": [\
+            ["ws", "npm:7.5.7"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:334e7bf99fb2a779de992a0fe8ef6091b9931b2915564f1043ba7ad65c6992cab0d4709c831042df87e21d1d5578aec92ab34fce4d7ccecadea3149593a89ee5#npm:7.5.7", {\
+          "packageLocation": "./.yarn/__virtual__/ws-virtual-6112f8b682/0/cache/ws-npm-7.5.7-6cc440864a-5c1f669a16.zip/node_modules/ws/",\
+          "packageDependencies": [\
+            ["ws", "virtual:334e7bf99fb2a779de992a0fe8ef6091b9931b2915564f1043ba7ad65c6992cab0d4709c831042df87e21d1d5578aec92ab34fce4d7ccecadea3149593a89ee5#npm:7.5.7"],\
+            ["@types/bufferutil", null],\
+            ["@types/utf-8-validate", null],\
+            ["bufferutil", null],\
+            ["utf-8-validate", null]\
+          ],\
+          "packagePeers": [\
+            "@types/bufferutil",\
+            "@types/utf-8-validate",\
+            "bufferutil",\
+            "utf-8-validate"\
           ],\
           "linkType": "HARD"\
         }]\
